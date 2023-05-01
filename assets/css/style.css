@@ -204,14 +204,14 @@ hr {
     width: 100%;
     overflow: hidden;
     background-position: center;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;  
 }
 
 #times div {
     color: #fafafa;
     background-color: rgba(0,0,0,0.6);
     width: 20%;
-    height: 300px;
+    height: 200px;
     float: left;
     /*padding 30px top 0 right 0 bottom and 10px left*/
     padding: 30px 0 0 10px;
@@ -238,7 +238,7 @@ footer {
     display: inline;
 }
 
-/*target the icons to move them apart*/
+/*target the icons to move them apart horizontally*/
 .social-networks i {
     font-size: 160%;
     margin: 1%;
