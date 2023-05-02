@@ -119,9 +119,9 @@ h2 {
     position: absolute;
 }
 
-/*Ethos Club*/
+/*club-ethos*/
 
-#ethos-club {
+#club-ethos {
     height: 600px;
 }
 
@@ -168,7 +168,8 @@ hr {
     margin-bottom: 50px;
 }
 
-.right-about-heading h2, p {
+.right-about-heading h2,
+p {
     text-align: right;
 }
 
@@ -204,12 +205,12 @@ hr {
     width: 100%;
     overflow: hidden;
     background-position: center;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
 }
 
 #times div {
     color: #fafafa;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 20%;
     height: 200px;
     float: left;
@@ -229,7 +230,7 @@ footer {
     height: 150px;
 }
 
-.social-networks{
+.social-networks {
     text-align: center;
 }
 
@@ -258,6 +259,45 @@ footer {
 }
 
 /*target images within the photo section*/
-#photos > img {
+#photos>img {
     width: 100%;
+}
+
+/*media queries - Media queries contain styles that are only called when certain criteria are met,
+such as a specified screen width being reached.*/
+
+/*For larger to medium screen sizes from 1200px wide and under the club-ethos section will resize*/
+/*1200px is the point at which our club-ethos elements become distorted and visually compromised*/
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        /*top and bottom margin to 0 and the left and right margin are "auto"*/
+        margin: 0 auto;
+    }
+
+    /*Welcome message and circular image below*/
+    #welcome {
+        /*30 pixels at the top and bottom and 0 pixels at the left and right*/
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        /*override any default desktop-level padding*/
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
 }
