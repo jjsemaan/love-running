@@ -266,7 +266,7 @@ footer {
 /*media queries - Media queries contain styles that are only called when certain criteria are met,
 such as a specified screen width being reached.*/
 
-/*For larger to medium screen sizes from 1200px wide and under the club-ethos section will resize*/
+/*For larger to medium screen sizes from 1200px wide and down to tablet size the club-ethos section will resize*/
 /*1200px is the point at which our club-ethos elements become distorted and visually compromised*/
 @media screen and (max-width: 1200px) {
     #club-ethos {
@@ -299,5 +299,19 @@ such as a specified screen width being reached.*/
 
     hr {
         display: none;
+    }
+}
+
+/*for medium screen sized of 950px and down suitable for smart phones*/
+
+@media screen and (max-width: 950px) {
+    /*we want to push the menu below the Logo*/
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        /*to produce some space between the menu and the logo*/
+        line-height: 25px;
     }
 }
