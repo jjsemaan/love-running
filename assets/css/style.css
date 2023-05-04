@@ -297,6 +297,18 @@ such as a specified screen width being reached.*/
         padding: 0;
     }
 
+    /*target the child times of each div*/
+    #times > div {
+        /*we change the width from 20% to 100% to fill the screen width*/
+        width: 100%;
+        /*clear both to stack the times vertically*/
+        clear: both;
+        /*height of each div*/
+        height: 150px;
+        /*padding is 0 to clear any unwanted desktop level padding*/
+        padding: 0;
+    }
+
     hr {
         display: none;
     }
